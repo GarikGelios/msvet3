@@ -1,0 +1,12 @@
+#Исключим директории:
+/node_modules/*
+node_modules/*
+/.idea/*
+.idea/*
+tmp/
+
+# файлы
+node_modules
+.env
+.htaccess
+access.md
