@@ -25,6 +25,7 @@ app.use(sassMiddleware({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/libs', express.static(__dirname + '/node_modules')); // редирект для js модулей
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

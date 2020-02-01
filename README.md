@@ -36,3 +36,17 @@ access.md
 - для автоперезагрузки сервера во время разработки, установил демона ``npm install --save-dev nodemon``
 - в package.json добавили команду "devstart": "nodemon ./bin/www"
 - запустили сервер с демоном ``SET DEBUG=msvet3:* & npm run devstart`` ← запускал отдельно иначе ошибка амперсанда
+
+- установил для разработки фреймворк ``npm install bootstrap -D``
+- подключил стили фреймворка в файл style.sass ``@import "node_modules/bootstrap/scss/bootstrap.scss";``
+- установил Jquery ``npm install jquery``
+- добавляем пути js из папки node_modules в файл app.js
+```
+app.use('/libs', express.static(__dirname + '/node_modules')); // редирект для js модулей
+```
+- подключаем скрипты Bootstrap и JQuery
+```
+<script src="/libs/jquery/dist/jquery.min.js"></script>
+<script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+```
+
