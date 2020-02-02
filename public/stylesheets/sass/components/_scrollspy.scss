@@ -1,7 +1,23 @@
+#scrollspy {
+    z-index: 10;
+    top: 56px;
+    
+}
 .nav-pills {
-    .nav-item {
-        .nav-link {
-            color: $color-main3;
-        }
+  .nav-item {
+    .nav-link {
+      color: $color-main3;
+      border-radius: 0;
+      &:hover {
+        color: #fff;
+        background-color: #bdd793;
+        border-color: #bdd793;
+      }
+      &.active {
+        color: #fff;
+        background-color: $color-main1;
+        border-color: $color-main1;
+      }
     }
+  }
 }

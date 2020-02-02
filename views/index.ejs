@@ -21,13 +21,21 @@
 <meta name="theme-color" content="#563d7c"> -->
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100" data-spy="scroll" data-target="#scrollspy" data-offset="0">
   <% include header.ejs %>
 
   <!-- Begin page content -->
   <main role="main" class="flex-shrink-0">
     <% include jumbotron.ejs %>
     <% include scrollspy.ejs %>
+    <section class="container">
+      <% include card-groups-flowers.ejs %>
+      <% include card-groups-vegetables.ejs %>
+      <% include card-groups-berries.ejs %>
+    </section> 
+      
+    
+
   </main>
 
   <footer class="footer mt-auto py-3">
@@ -35,13 +43,13 @@
       <span class="text-muted">Place sticky footer content here.</span>
     </div>
   </footer>
-  
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="/libs/jquery/dist/jquery.min.js"></script>
   <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="/libs/@fortawesome/fontawesome-free/js/all.min.js"></script>
-  
+
 </body>
 
 </html>
