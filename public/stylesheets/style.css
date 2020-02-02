@@ -11577,8 +11577,6 @@ readers do not read off random characters that represent icons */
   width: 250px; }
   .input-group.search:hover {
     width: 100%; }
-  .input-group.search input:active ~ .search {
-    width: 100%; }
 
 .navbar-green .navbar-brand {
   color: #fff; }
@@ -11598,13 +11596,27 @@ readers do not read off random characters that represent icons */
   color: #4F7218;
   border-color: #4F7218; }
 
+.first.jumbotron {
+  padding-top: 112px;
+  background-image: url(/images/2.jpg);
+  background-size: cover; }
+
 .btn-green {
   color: #fff;
   background-color: #BDD793;
   border-color: #BDD793; }
+  .btn-green:hover {
+    color: #4F7218;
+    text-decoration: none; }
 
-.btn:hover {
-  color: #4F7218;
-  text-decoration: none; }
+.btn-green2 {
+  color: #fff;
+  background-color: #88B04B;
+  border-color: #88B04B; }
+  .btn-green2:hover {
+    color: #B3D77B;
+    text-decoration: none;
+    background-color: #4F7218;
+    border-color: #4F7218; }
 
 /*# sourceMappingURL=style.css.map */

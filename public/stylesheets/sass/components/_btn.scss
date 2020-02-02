@@ -1,0 +1,21 @@
+.btn-green {
+  color: #fff;
+  background-color: $color-main5;
+  border-color: $color-main5;
+  &:hover {
+    color: $color-main3;
+    text-decoration: none;
+  }
+}
+
+.btn-green2 {
+  color: #fff;
+  background-color: $color-main1;
+  border-color: $color-main1;
+  &:hover {
+    color: $color-main4;
+    text-decoration: none;
+    background-color: $color-main3;
+    border-color: $color-main3;
+  }
+}
