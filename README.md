@@ -50,3 +50,8 @@ app.use('/libs', express.static(__dirname + '/node_modules')); // редирек
 <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 ```
 
+## Макет
+- colors: https://colorscheme.ru/#2r21TinnZw0w0 #88B04B *PANTONE Color of the Year 2017*
+- icons: FortAwesome``npm install --save @fortawesome/fontawesome-free``
+
+
