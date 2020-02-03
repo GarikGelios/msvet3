@@ -5,8 +5,11 @@
   &.search {
     transition: width 1s;
     width: 250px;
+    @include media-breakpoint-down(xs) {
+      width: 150px;
+    }
     &:hover {
-        width: 100%;  
+      width: 100%;
     }
   }
 }
@@ -16,9 +19,10 @@
     color: #fff;
   }
   .navbar-nav {
+    flex-basis: 540px;
     .nav-item {
       &:hover {
-        background-color: $color-main1 !important;
+        background-color: $color-primary-0 !important;
       }
     }
     .nav-link {
@@ -30,10 +34,9 @@
   }
 }
 .bg-green {
-  background-color: $color-main4 !important;
+  background-color: $color-primary-3 !important;
 }
 .btn-outline-green {
-  color: $color-main3;
-  border-color: $color-main3;
+  color: $color-primary-2;
+  border-color: $color-primary-2;
 }
-

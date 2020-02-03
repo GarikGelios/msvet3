@@ -1,21 +1,21 @@
 .btn-green {
   color: #fff;
-  background-color: $color-main5;
-  border-color: $color-main5;
+  background-color: $color-primary-4;
+  border-color: $color-primary-4;
   &:hover {
-    color: $color-main3;
+    color: $color-primary-2;
     text-decoration: none;
   }
 }
 
 .btn-green2 {
   color: #fff;
-  background-color: $color-main1;
-  border-color: $color-main1;
+  background-color: $color-primary-0;
+  border-color: $color-primary-0;
   &:hover {
-    color: $color-main4;
+    color: $color-primary-3;
     text-decoration: none;
-    background-color: $color-main3;
-    border-color: $color-main3;
+    background-color: $color-primary-2;
+    border-color: $color-primary-2;
   }
 }

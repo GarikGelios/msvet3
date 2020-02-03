@@ -11575,19 +11575,23 @@ readers do not read off random characters that represent icons */
 .input-group.search {
   transition: width 1s;
   width: 250px; }
+  @media (max-width: 575.98px) {
+    .input-group.search {
+      width: 150px; } }
   .input-group.search:hover {
     width: 100%; }
 
 .navbar-green .navbar-brand {
   color: #fff; }
 
-.navbar-green .navbar-nav .nav-item:hover {
-  background-color: #88B04B !important; }
-
-.navbar-green .navbar-nav .nav-link {
-  color: #fff; }
-  .navbar-green .navbar-nav .nav-link.disabled {
-    color: rgba(255, 255, 255, 0.5); }
+.navbar-green .navbar-nav {
+  flex-basis: 540px; }
+  .navbar-green .navbar-nav .nav-item:hover {
+    background-color: #88B04B !important; }
+  .navbar-green .navbar-nav .nav-link {
+    color: #fff; }
+    .navbar-green .navbar-nav .nav-link.disabled {
+      color: rgba(255, 255, 255, 0.5); }
 
 .bg-green {
   background-color: #B3D77B !important; }
@@ -11622,6 +11626,9 @@ readers do not read off random characters that represent icons */
 #scrollspy {
   z-index: 10;
   top: 56px; }
+  @media (max-width: 991.98px) {
+    #scrollspy {
+      top: 110px; } }
 
 .nav-pills .nav-item .nav-link {
   color: #4F7218;
