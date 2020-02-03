@@ -10,8 +10,8 @@
       border-radius: 0;
       &:hover {
         color: #fff;
-        background-color: #bdd793;
-        border-color: #bdd793;
+        background-color: $color-primary-4;
+        border-color: $color-primary-4;
       }
       &.active {
         color: #fff;
