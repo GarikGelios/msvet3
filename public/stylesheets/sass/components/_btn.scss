@@ -1,21 +1,8 @@
-.btn-green {
-  color: #fff;
+.btn-primary {
   background-color: $color-primary-4;
   border-color: $color-primary-4;
   &:hover {
     color: $color-primary-2;
     text-decoration: none;
-  }
-}
-
-.btn-green2 {
-  color: #fff;
-  background-color: $color-primary-0;
-  border-color: $color-primary-0;
-  &:hover {
-    color: $color-primary-3;
-    text-decoration: none;
-    background-color: $color-primary-2;
-    border-color: $color-primary-2;
   }
 }

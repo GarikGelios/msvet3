@@ -11569,9 +11569,6 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
-.navbar-brand {
-  padding-top: 0; }
-
 .input-group.search {
   transition: width 1s;
   width: 250px; }
@@ -11581,47 +11578,25 @@ readers do not read off random characters that represent icons */
   .input-group.search:hover {
     width: 100%; }
 
-.navbar-green .navbar-brand {
-  color: #fff; }
+.navbar-nav .nav-item:hover {
+  background-color: #004680 !important; }
 
-.navbar-green .navbar-nav {
-  flex-basis: 540px; }
-  .navbar-green .navbar-nav .nav-item:hover {
-    background-color: #004680 !important; }
-  .navbar-green .navbar-nav .nav-link {
-    color: #fff; }
-    .navbar-green .navbar-nav .nav-link.disabled {
-      color: rgba(255, 255, 255, 0.5); }
+.navbar-nav .nav-link.disabled {
+  color: #e4e4e4 !important; }
 
-.bg-green {
+.bg-primary {
   background-color: #307ec0 !important; }
 
-.btn-outline-green {
-  color: #002d53;
-  border-color: #002d53; }
-
-.first.jumbotron {
-  padding-top: 112px;
+.bg-image2 {
   background-image: url(/images/2.jpg);
   background-size: cover; }
 
-.btn-green {
-  color: #fff;
+.btn-primary {
   background-color: #5690c0;
   border-color: #5690c0; }
-  .btn-green:hover {
+  .btn-primary:hover {
     color: #002d53;
     text-decoration: none; }
-
-.btn-green2 {
-  color: #fff;
-  background-color: #004680;
-  border-color: #004680; }
-  .btn-green2:hover {
-    color: #307ec0;
-    text-decoration: none;
-    background-color: #002d53;
-    border-color: #002d53; }
 
 #scrollspy {
   z-index: 10;
@@ -11630,16 +11605,15 @@ readers do not read off random characters that represent icons */
     #scrollspy {
       top: 110px; } }
 
-.nav-pills .nav-item .nav-link {
-  color: #002d53;
-  border-radius: 0; }
-  .nav-pills .nav-item .nav-link:hover {
-    color: #fff;
+.nav-item .nav-link {
+  color: #002d53; }
+  .nav-item .nav-link:hover {
+    color: #fff !important;
     background-color: #5690c0;
     border-color: #5690c0; }
-  .nav-pills .nav-item .nav-link.active {
-    color: #fff;
-    background-color: #004680;
-    border-color: #004680; }
+  .nav-item .nav-link.active {
+    color: #fff !important;
+    background-color: #5690c0;
+    border-color: #5690c0; }
 
 /*# sourceMappingURL=style.css.map */

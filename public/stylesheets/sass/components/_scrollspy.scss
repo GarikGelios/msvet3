@@ -3,21 +3,20 @@
     top: 56px;
     @include media-breakpoint-down(md) { top: 110px; }
 }
-.nav-pills {
+
   .nav-item {
     .nav-link {
       color: $color-primary-2;
-      border-radius: 0;
       &:hover {
-        color: #fff;
+        color: #fff !important;
         background-color: $color-primary-4;
         border-color: $color-primary-4;
       }
       &.active {
-        color: #fff;
-        background-color: $color-primary-0;
-        border-color: $color-primary-0;
+        color: #fff !important;
+        background-color: $color-primary-4;
+        border-color: $color-primary-4;
       }
     }
   }
-}
+
