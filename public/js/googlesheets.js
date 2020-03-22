@@ -73,12 +73,21 @@ var getJSON = function (url, callback) {
 
         //создаём пункт в меню scrollspy
         showMenu(data, categoryIdValue, i);
+        console.log(data[i]['gsx$published']);
+        //проверяем разрешение на публикаци продукта
+        if(data[i]['gsx$published']['$t'] == 1){
+          console.log(data[i]['gsx$published']);
+          //потом создаём продукт в этом блоке 
+          showProducts(data, categoryIdValue, i);
+        }
 
-        //потом создаём продукт в этом блоке
-        showProducts(data, categoryIdValue, i);
       } else {
         //или сразу создаём продукт в уже имеющимся блоке
-        showProducts(data, categoryIdValue, i);
+        //проверяем разрешение на публикаци продукта
+        if(data[i]['gsx$published']['$t'] == 1){
+          //потом создаём продукт в этом блоке 
+          showProducts(data, categoryIdValue, i);
+        }
       }
     }
   }
