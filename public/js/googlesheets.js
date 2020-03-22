@@ -51,6 +51,8 @@ var getJSON = function (url, callback) {
 
   //определяем в DOM элемент в который будем встраивать продукты
   const products = document.getElementById('products');
+  //определяем в DOM элемент в который будем встраивать пункты меню для категорий
+  const scrollspymenu = document.getElementById('scrollspymenu');
 
   //проверяем категории
   showCategory = (data) => {
@@ -69,6 +71,9 @@ var getJSON = function (url, callback) {
         article.className = "row row-cols-1 row-cols-md-2 mt-5";
         products.append(article);
 
+        //создаём пункт в меню scrollspy
+        showMenu(data, categoryIdValue, i);
+
         //потом создаём продукт в этом блоке
         showProducts(data, categoryIdValue, i);
       } else {
@@ -83,9 +88,9 @@ var getJSON = function (url, callback) {
       //находим нужную категорию продукта и вставляем туда продукт
       const categoryRow = document.getElementById(categoryIdValue);
       const card = `
-      <div class="col col-md-3 mb-4">
+      <div class="col col-sm-6 col-md-4 col-lg-3 mb-4">
         <div class="card h-100">
-        <img src="${data[i]['gsx$img']['$t']}" class="card-img-top" alt="...">
+        <img src="${data[i]['gsx$img']['$t']}" class="card-img-top" alt="${data[i]['gsx$product']['$t']}">
             <div class="card-body">
             <h5 class="card-title">${data[i]['gsx$product']['$t']}</h5>
             <p class="card-text">${data[i]['gsx$title']['$t']}</p>
@@ -93,7 +98,18 @@ var getJSON = function (url, callback) {
         </div>
       </div>
       `;
-      categoryRow.insertAdjacentHTML('afterbegin', card);
+      categoryRow.insertAdjacentHTML('beforeEnd', card);
   }
+
+  //добавляем пункт в меню scrollspy
+  showMenu = (data, categoryIdValue, i) => {
+    const scrollspybutton = `
+      <li class="nav-item">
+        <a class="nav-link px-4 py-2" href="#${categoryIdValue}">${data[i]['gsx$category']['$t']}</a>
+      </li>
+    `;
+    scrollspymenu.insertAdjacentHTML('beforeEnd', scrollspybutton);
+  }
+
 
 };
