@@ -11579,23 +11579,23 @@ readers do not read off random characters that represent icons */
     width: 100%; }
 
 .navbar-nav .nav-item:hover {
-  background-color: #004680 !important; }
+  background-color: #C67300 !important; }
 
 .navbar-nav .nav-link.disabled {
   color: #e4e4e4 !important; }
 
 .bg-primary {
-  background-color: #307ec0 !important; }
+  background-color: #E39B39 !important; }
 
 .bg-image2 {
-  background-image: url(/images/2.jpg);
+  background-image: url(/images/1.jpg);
   background-size: cover; }
 
 .btn-primary {
-  background-color: #5690c0;
-  border-color: #5690c0; }
+  background-color: #E3AE66;
+  border-color: #E3AE66; }
   .btn-primary:hover {
-    color: #002d53;
+    color: #814B00;
     text-decoration: none; }
 
 #scrollspy {
@@ -11606,14 +11606,14 @@ readers do not read off random characters that represent icons */
       top: 100px; } }
 
 .nav-item .nav-link {
-  color: #002d53; }
+  color: #814B00; }
   .nav-item .nav-link:hover {
     color: #fff !important;
-    background-color: #5690c0;
-    border-color: #5690c0; }
+    background-color: #E3AE66;
+    border-color: #E3AE66; }
   .nav-item .nav-link.active {
     color: #fff !important;
-    background-color: #5690c0;
-    border-color: #5690c0; }
+    background-color: #E3AE66;
+    border-color: #E3AE66; }
 
 /*# sourceMappingURL=style.css.map */
